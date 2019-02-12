@@ -2,6 +2,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MSTestProject.Utils;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using System;
 using System.IO;
 using System.Reflection;
 using System.Threading;
@@ -15,13 +17,13 @@ namespace Example {
         public Actionwords()
         {
             Driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+            //setup implicit wait
+            Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             Driver.Manage().Window.Maximize();
         }
 
         public void IClickTheLogInButton() {
             Driver.FindElement(By.CssSelector("button[type=submit]")).Click();
-            //TODO will use the wait func later
-            Thread.Sleep(2000);
         }
 
         public void IClickTheSearchEnginesOption() {
@@ -172,11 +174,13 @@ namespace Example {
 
         public void ILogOutOfTheSystem() {
             Driver.FindElement(By.CssSelector(".nav-link.btn")).Click();
-            //TODO will use the wait func later
-            Thread.Sleep(2000);
         }
 
         public void IShouldSeeTheVSMCLoginPage() {
+            //since we use 10s for implicit wait, we don't need this explicit wait
+            //var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+            //var element = wait.Until<IWebElement>(d => d.FindElement(By.CssSelector(".form-signin")));
+
             var element = Driver.FindElement(By.CssSelector(".form-signin"));
             Assert.IsNotNull(element);
         }
@@ -186,6 +190,10 @@ namespace Example {
         }
 
         public void IShouldSeeTheSearchEnginesPage() {
+            //since we use 10s for implicit wait, we don't need this explicit wait
+            //var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+            //var element = wait.Until<IWebElement>(d => d.FindElement(By.CssSelector(".navbar-collapse")));
+
             var element = Driver.FindElement(By.CssSelector(".navbar-collapse"));
             Assert.IsNotNull(element);
         }

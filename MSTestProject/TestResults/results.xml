@@ -1,14 +1,140 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="6e7a742c-b7f1-4fd7-8a8b-d8e513cfd28d" name="binh@BINH-PC2 2019-02-11 12:06:23" runUser="NETVIP\binh" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2019-02-11T12:06:23.5786646-08:00" queuing="2019-02-11T12:06:23.5786647-08:00" start="2019-02-11T12:06:22.1943914-08:00" finish="2019-02-11T12:06:23.6330031-08:00" />
-  <TestSettings name="default" id="e2928d83-0585-4f0f-82c5-fce08891dfa5">
-    <Deployment runDeploymentRoot="binh_BINH-PC2_2019-02-11_12_06_23" />
+<TestRun id="4d7879bd-29fd-4f43-92c3-ad04314988b2" name="binh@BINH-PC2 2019-02-11 14:35:10" runUser="NETVIP\binh" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2019-02-11T14:35:10.3284878-08:00" queuing="2019-02-11T14:35:10.3284879-08:00" start="2019-02-11T14:34:57.0641161-08:00" finish="2019-02-11T14:37:04.5591858-08:00" />
+  <TestSettings name="default" id="faba6a3e-409c-4964-a935-e8440ce97413">
+    <Deployment runDeploymentRoot="binh_BINH-PC2_2019-02-11_14_35_10" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="68f9565d-af11-45e3-a0f5-409606aef60f" testId="aeb97e1f-40b0-e7cc-1bdc-79ef7cb111e6" testName="SuccessfulUserLoginAndLogoutUidA682A789_3Be2_4B6A_A051_E5Ba383E49Fa" computerName="BINH-PC2" duration="00:00:00.0024734" startTime="2019-02-11T12:06:23.3827196-08:00" endTime="2019-02-11T12:06:23.3852884-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="68f9565d-af11-45e3-a0f5-409606aef60f">
+    <UnitTestResult executionId="0f39bd4a-1e3e-4239-a935-3a44cc7f4c6d" testId="8742c4ed-4ec6-a105-3d6c-28d6c8f3fe2e" testName="DeleteSearchEngineByButton_YesUid23F02B0C_5872_458F_8B76_246F1D639F62" computerName="BINH-PC2" duration="00:00:08.1622680" startTime="2019-02-11T14:36:48.0691813-08:00" endTime="2019-02-11T14:36:56.2318176-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f39bd4a-1e3e-4239-a935-3a44cc7f4c6d">
       <Output>
         <StdOut>Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (6.0s)&#xD;
+And I should see the VSMC login page&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
+And I successfully login as a SYSADMIN&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)&#xD;
+Then I add my search engine if it does not already exist&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I search for my search engine by Name&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see my search engine in the list of search engines&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the Delete Selected button on the search engines page disabled&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I select my search engine&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click the Delete Selected button on the search engine page&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see the Delete Confirmation modal&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click Yes on the Delete Confirmation modal&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see Delete toaster confirmation&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should not see my search engine in the list of search engines&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature.DeleteSearchEngineByButton_YesUid23F02B0C_5872_458F_8B76_246F1D639F62 threw exception: &#xD;
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)&#xD;
+   at Example.Actionwords.IShouldSeeTheSearchEnginesPage() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 189&#xD;
+   at Example.Actionwords.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 260&#xD;
+   at Example.StepDefinitions.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\StepDefinitions.cs:line 163&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 73&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 411&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 316&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep() in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 132&#xD;
+   at MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature.ScenarioCleanup()&#xD;
+   at MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature.DeleteSearchEngineByButton_YesUid23F02B0C_5872_458F_8B76_246F1D639F62() in E:\Working Data\Github\AutomationTesting\MSTestProject\AutomatedScripts\SearchEngines\DeleteSearchEngines.feature:line 41&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="152b1ed6-e373-4dfd-9444-ca2a8f279468" testId="b1ea9a1d-08ae-a79f-f6ec-c08aafcf28a1" testName="CreateSearchEngineSearchAndVerifyDataOnMainSearchEnginePageUid88Ebcfef_173F_48F4_A699_416458491A63" computerName="BINH-PC2" duration="00:00:07.9826331" startTime="2019-02-11T14:36:22.5360221-08:00" endTime="2019-02-11T14:36:30.5196643-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="152b1ed6-e373-4dfd-9444-ca2a8f279468">
+      <Output>
+        <StdOut>Given I go to the VSMC site&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (5.8s)&#xD;
+And I should see the VSMC login page&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
+And I successfully login as a SYSADMIN&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)&#xD;
+And I count the number of search engines on the page&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see Display 1-count of total on the page&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I click the Add Search Engine button&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see the Add Search Engine details screen&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I enter a random automated search engine name&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I verify that the Key Prefix is set to STANDARD_KEY&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I enter a description of "Automated created search engine"&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click the Save button on the search engine details page&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see the Add Successful toaster confirmation&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see the Search Engines page&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I search for my search engine by Name&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see my search engine in the list of search engines&#xD;
+-&gt; skipped because of previous errors&#xD;
+And The Name field should be set to my search engine name&#xD;
+-&gt; skipped because of previous errors&#xD;
+And The Documents field should be set to "0"&#xD;
+-&gt; skipped because of previous errors&#xD;
+And The Key field has my search engine key&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see a Last Updated timestamp of current time&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see a By field populated with SYSADMIN&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the Edit icon for the search engine&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the Trash Can icon for the search engine&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the search result of "Displaying 1 - 1 of 1"&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I clear the search engine box&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see Display 1-count of total on the page&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method MSTestProject.AutomatedScripts.SearchEngines.AddSearchEngineFeature.CreateSearchEngineSearchAndVerifyDataOnMainSearchEnginePageUid88Ebcfef_173F_48F4_A699_416458491A63 threw exception: &#xD;
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)&#xD;
+   at Example.Actionwords.IShouldSeeTheSearchEnginesPage() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 189&#xD;
+   at Example.Actionwords.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 260&#xD;
+   at Example.StepDefinitions.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\StepDefinitions.cs:line 163&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 73&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 411&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 316&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep() in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 132&#xD;
+   at MSTestProject.AutomatedScripts.SearchEngines.AddSearchEngineFeature.ScenarioCleanup()&#xD;
+   at MSTestProject.AutomatedScripts.SearchEngines.AddSearchEngineFeature.CreateSearchEngineSearchAndVerifyDataOnMainSearchEnginePageUid88Ebcfef_173F_48F4_A699_416458491A63() in E:\Working Data\Github\AutomationTesting\MSTestProject\AutomatedScripts\SearchEngines\AddSearchEngine.feature:line 32&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="369b2f11-3b08-4e36-9095-d52cf4c2eed1" testId="aeb97e1f-40b0-e7cc-1bdc-79ef7cb111e6" testName="SuccessfulUserLoginAndLogoutUidA682A789_3Be2_4B6A_A051_E5Ba383E49Fa" computerName="BINH-PC2" duration="00:00:10.1290054" startTime="2019-02-11T14:35:19.1893589-08:00" endTime="2019-02-11T14:35:29.3190971-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="369b2f11-3b08-4e36-9095-d52cf4c2eed1">
+      <Output>
+        <StdOut>Given I go to the VSMC site&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (7.9s)&#xD;
 Then I should see the VSMC login page&#xD;
 -&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
 When I enter an email address of SUPER _USER&#xD;
@@ -18,319 +144,80 @@ And I enter a password of SUPER_USER_PASSWORD&#xD;
 Then The Log in button should be enabled&#xD;
 -&gt; done: StepDefinitions.TheLogInButtonShouldBeEnabled() (0.0s)&#xD;
 When I click the Log in button&#xD;
--&gt; done: StepDefinitions.IClickTheLogInButton() (0.0s)&#xD;
+-&gt; done: StepDefinitions.IClickTheLogInButton() (2.1s)&#xD;
 And I should see the Search Engines page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheSearchEnginesPage() (0.0s)&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)&#xD;
 When I log out of the system&#xD;
--&gt; done: StepDefinitions.ILogOutOfTheSystem() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 Then I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)</StdOut>
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method MSTestProject.AutomatedScripts.LoginFeature.SuccessfulUserLoginAndLogoutUidA682A789_3Be2_4B6A_A051_E5Ba383E49Fa threw exception: &#xD;
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)&#xD;
+   at Example.Actionwords.IShouldSeeTheSearchEnginesPage() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 189&#xD;
+   at Example.StepDefinitions.IShouldSeeTheSearchEnginesPage() in E:\Working Data\Github\AutomationTesting\MSTestProject\StepDefinitions.cs:line 92&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 73&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 411&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 316&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep() in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 132&#xD;
+   at MSTestProject.AutomatedScripts.LoginFeature.ScenarioCleanup()&#xD;
+   at MSTestProject.AutomatedScripts.LoginFeature.SuccessfulUserLoginAndLogoutUidA682A789_3Be2_4B6A_A051_E5Ba383E49Fa() in E:\Working Data\Github\AutomationTesting\MSTestProject\AutomatedScripts\Login.feature:line 31&#xD;
+</StackTrace>
+        </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="5d799c10-99c5-49f2-9eb8-6c3b848939b1" testId="f654ffb2-e94a-fbea-e420-691c9809b428" testName="UnsuccessfulSystemAdministratorLoginUidF0D8Da9D_7069_4218_Ac00_Ff5Dd72A6Eaf" computerName="BINH-PC2" duration="00:00:00.0013155" startTime="2019-02-11T12:06:23.3810740-08:00" endTime="2019-02-11T12:06:23.3825865-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d799c10-99c5-49f2-9eb8-6c3b848939b1">
+    <UnitTestResult executionId="1d1f12b3-0165-4797-95c3-c8bbc191e548" testId="3ba04ced-0eb4-2531-570e-78262f9e8d0f" testName="LoginAttemptsAreNotRestrictedUid78590E2A_A8E8_4Cfd_9564_4112Fc501F09" computerName="BINH-PC2" duration="00:00:18.3497135" startTime="2019-02-11T14:35:35.4512942-08:00" endTime="2019-02-11T14:35:53.8013134-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d1f12b3-0165-4797-95c3-c8bbc191e548">
       <Output>
         <StdOut>Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
-Then I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
-And I unsuccessfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.IUnsuccessfullyLoginAsASYSADMIN() (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="abdab74e-edb1-4eb2-adba-6d0783ec26fa" testId="72350010-2df6-ebf9-eb8a-96c0795080d8" testName="RequiredFieldsForLoginUid68Fbf401_D6Eb_44F8_9Dcd_6F3D4972E868" computerName="BINH-PC2" duration="00:00:00.0025412" startTime="2019-02-11T12:06:23.3853002-08:00" endTime="2019-02-11T12:06:23.3879236-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="abdab74e-edb1-4eb2-adba-6d0783ec26fa">
-      <Output>
-        <StdOut>Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
-Then I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
-When I press tab on the email address field&#xD;
--&gt; done: StepDefinitions.IPressTabOnTheEmailAddressField() (0.0s)&#xD;
-Then I should see the Email is required message&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheEmailIsRequiredMessage() (0.0s)&#xD;
-And I should see the Password is required message&#xD;
--&gt; done: StepDefinitions.IShouldSeeThePasswordIsRequiredMessage() (0.0s)&#xD;
-And The Log in button should be disabled&#xD;
--&gt; done: StepDefinitions.TheLogInButtonShouldBeDisabled() (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="9ecc675a-043b-407b-9919-e2d4c9c445dd" testId="6f2b710c-1b82-1a08-8416-6d7f112115b2" testName="DeleteSearchEngineByButton_NoUidE6Ad8020_86C7_4A7D_8Cbd_157152E53599" computerName="BINH-PC2" duration="00:00:00.0017311" startTime="2019-02-11T12:06:23.5121476-08:00" endTime="2019-02-11T12:06:23.5140095-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9ecc675a-043b-407b-9919-e2d4c9c445dd">
-      <Output>
-        <StdOut>Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
-And I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
-And I successfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.ISuccessfullyLoginAsASYSADMIN() (0.0s)&#xD;
-Then I add my search engine if it does not already exist&#xD;
--&gt; done: StepDefinitions.IAddMySearchEngineIfItDoesNotAlreadyExist() (0.0s)&#xD;
-Then I search for my search engine by Name&#xD;
--&gt; done: StepDefinitions.ISearchForMySearchEngineByName() (0.0s)&#xD;
-And I should see my search engine in the list of search engines&#xD;
--&gt; done: StepDefinitions.IShouldSeeMySearchEngineInTheListOfSearchEngines() (0.0s)&#xD;
-And I should see the Delete Selected button on the search engines page disabled&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheDeleteSelectedButtonOnTheSearchEnginesPageDisabled() (0.0s)&#xD;
-And I select my search engine&#xD;
--&gt; done: StepDefinitions.ISelectMySearchEngine() (0.0s)&#xD;
-And I click the Delete Selected button on the search engine page&#xD;
--&gt; done: StepDefinitions.IClickTheDeleteSelectedButtonOnTheSearchEnginePage() (0.0s)&#xD;
-Then I should see the Delete Confirmation modal&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheDeleteConfirmationModal() (0.0s)&#xD;
-And I click No on the Delete Confirmation modal&#xD;
--&gt; done: StepDefinitions.IClickNoOnTheDeleteConfirmationModal() (0.0s)&#xD;
-And I should not see the Delete toaster confirmation&#xD;
--&gt; done: StepDefinitions.IShouldNotSeeTheDeleteToasterConfirmation() (0.0s)&#xD;
-And I should see my search engine in the list of search engines&#xD;
--&gt; done: StepDefinitions.IShouldSeeMySearchEngineInTheListOfSearchEngines() (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="7a6eb933-6727-4a51-ae18-9e477a238b98" testId="fbbc58ec-b202-1088-03b7-c59a3ff1f523" testName="DeleteSearchEngineByIcon_NoUidBeb6F288_E3Af_4B6E_Aa8C_2Fa5Ab53D2De" computerName="BINH-PC2" duration="00:00:00.0023273" startTime="2019-02-11T12:06:23.5023988-08:00" endTime="2019-02-11T12:06:23.5048485-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a6eb933-6727-4a51-ae18-9e477a238b98">
-      <Output>
-        <StdOut>Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
-And I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
-And I successfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.ISuccessfullyLoginAsASYSADMIN() (0.0s)&#xD;
-And I add my search engine if it does not already exist&#xD;
--&gt; done: StepDefinitions.IAddMySearchEngineIfItDoesNotAlreadyExist() (0.0s)&#xD;
-Then I search for my search engine by Name&#xD;
--&gt; done: StepDefinitions.ISearchForMySearchEngineByName() (0.0s)&#xD;
-And I should see my search engine in the list of search engines&#xD;
--&gt; done: StepDefinitions.IShouldSeeMySearchEngineInTheListOfSearchEngines() (0.0s)&#xD;
-When I click the trash can associated with my search engine&#xD;
--&gt; done: StepDefinitions.IClickTheTrashCanAssociatedWithMySearchEngine() (0.0s)&#xD;
-Then I should see the Delete Confirmation modal&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheDeleteConfirmationModal() (0.0s)&#xD;
-And I click No on the Delete Confirmation modal&#xD;
--&gt; done: StepDefinitions.IClickNoOnTheDeleteConfirmationModal() (0.0s)&#xD;
-And I should see my search engine&#xD;
--&gt; done: StepDefinitions.IShouldSeeMySearchEngine() (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="c78fcf39-3a1c-4c67-a1bd-3a86ca3a7f30" testId="3ba04ced-0eb4-2531-570e-78262f9e8d0f" testName="LoginAttemptsAreNotRestrictedUid78590E2A_A8E8_4Cfd_9564_4112Fc501F09" computerName="BINH-PC2" duration="00:00:00.0013136" startTime="2019-02-11T12:06:23.3879360-08:00" endTime="2019-02-11T12:06:23.3893599-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c78fcf39-3a1c-4c67-a1bd-3a86ca3a7f30">
-      <Output>
-        <StdOut>Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (5.9s)&#xD;
 Then I should see the VSMC login page&#xD;
 -&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
 Then I unsuccessfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.IUnsuccessfullyLoginAsASYSADMIN() (0.0s)&#xD;
+-&gt; done: StepDefinitions.IUnsuccessfullyLoginAsASYSADMIN() (2.1s)&#xD;
 Then I unsuccessfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.IUnsuccessfullyLoginAsASYSADMIN() (0.0s)&#xD;
+-&gt; done: StepDefinitions.IUnsuccessfullyLoginAsASYSADMIN() (2.1s)&#xD;
 Then I unsuccessfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.IUnsuccessfullyLoginAsASYSADMIN() (0.0s)&#xD;
+-&gt; done: StepDefinitions.IUnsuccessfullyLoginAsASYSADMIN() (2.1s)&#xD;
 Then I unsuccessfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.IUnsuccessfullyLoginAsASYSADMIN() (0.0s)&#xD;
+-&gt; done: StepDefinitions.IUnsuccessfullyLoginAsASYSADMIN() (2.1s)&#xD;
 Then I unsuccessfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.IUnsuccessfullyLoginAsASYSADMIN() (0.0s)&#xD;
+-&gt; done: StepDefinitions.IUnsuccessfullyLoginAsASYSADMIN() (2.0s)&#xD;
 Then I successfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.ISuccessfullyLoginAsASYSADMIN() (0.0s)</StdOut>
+-&gt; error: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)</StdOut>
+        <ErrorInfo>
+          <Message>Test method MSTestProject.AutomatedScripts.LoginFeature.LoginAttemptsAreNotRestrictedUid78590E2A_A8E8_4Cfd_9564_4112Fc501F09 threw exception: &#xD;
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)&#xD;
+   at Example.Actionwords.IShouldSeeTheSearchEnginesPage() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 189&#xD;
+   at Example.Actionwords.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 260&#xD;
+   at Example.StepDefinitions.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\StepDefinitions.cs:line 163&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 73&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 411&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 316&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep() in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 132&#xD;
+   at MSTestProject.AutomatedScripts.LoginFeature.ScenarioCleanup()&#xD;
+   at MSTestProject.AutomatedScripts.LoginFeature.LoginAttemptsAreNotRestrictedUid78590E2A_A8E8_4Cfd_9564_4112Fc501F09() in E:\Working Data\Github\AutomationTesting\MSTestProject\AutomatedScripts\Login.feature:line 48&#xD;
+</StackTrace>
+        </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="04124c87-5f6c-47af-bfa0-772559ba2d79" testId="677d75db-a29d-d14a-97ef-add3d0e26b2d" testName="DeleteSearchEngineByIcon_YesUid3F4237D8_6Cd2_4932_84Db_58746E91D5F0" computerName="BINH-PC2" duration="00:00:00.0051986" startTime="2019-02-11T12:06:23.4966821-08:00" endTime="2019-02-11T12:06:23.5023737-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="04124c87-5f6c-47af-bfa0-772559ba2d79">
+    <UnitTestResult executionId="18555e15-4dd6-433b-92df-92abbb072e83" testId="17ebdbeb-772e-a27b-60c8-689d3c45b017" testName="RestrictionsOnEmailAndPasswordFieldsUidD40Bf40F_8C25_4225_9Fba_F173232B7E01" computerName="BINH-PC2" duration="00:00:05.8441900" startTime="2019-02-11T14:35:53.8016332-08:00" endTime="2019-02-11T14:35:59.6459913-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18555e15-4dd6-433b-92df-92abbb072e83">
       <Output>
         <StdOut>Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
-And I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
-And I successfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.ISuccessfullyLoginAsASYSADMIN() (0.0s)&#xD;
-Then I add my search engine if it does not already exist&#xD;
--&gt; done: StepDefinitions.IAddMySearchEngineIfItDoesNotAlreadyExist() (0.0s)&#xD;
-Then I search for my search engine by Name&#xD;
--&gt; done: StepDefinitions.ISearchForMySearchEngineByName() (0.0s)&#xD;
-And I should see my search engine in the list of search engines&#xD;
--&gt; done: StepDefinitions.IShouldSeeMySearchEngineInTheListOfSearchEngines() (0.0s)&#xD;
-When I click the trash can associated with my search engine&#xD;
--&gt; done: StepDefinitions.IClickTheTrashCanAssociatedWithMySearchEngine() (0.0s)&#xD;
-Then I should see the Delete Confirmation modal&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheDeleteConfirmationModal() (0.0s)&#xD;
-And I click Yes on the Delete Confirmation modal&#xD;
--&gt; done: StepDefinitions.IClickYesOnTheDeleteConfirmationModal() (0.0s)&#xD;
-And I should see Delete toaster confirmation&#xD;
--&gt; done: StepDefinitions.IShouldSeeDeleteToasterConfirmation() (0.0s)&#xD;
-And I should not see my search engine in the list of search engines&#xD;
--&gt; done: StepDefinitions.IShouldNotSeeMySearchEngineInTheListOfSearchEngines() (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="c1c8b78e-a95c-428b-bed4-20b3b370899e" testId="0dd040cd-5e68-b9a8-518d-890d1822a740" testName="SuccessfulDefaultLoginAndLogoutUid5B840636_7944_4Afa_8175_91D2B049F56D" computerName="BINH-PC2" duration="00:00:00.0539827" startTime="2019-02-11T12:06:23.0598105-08:00" endTime="2019-02-11T12:06:23.3701077-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1c8b78e-a95c-428b-bed4-20b3b370899e">
-      <Output>
-        <StdOut>-&gt; Loading plugin E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll&#xD;
--&gt; Using default config&#xD;
-Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
-Then I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
-When I enter an email address "sysadmin@visioninternet.com"&#xD;
--&gt; done: StepDefinitions.IEnterAnEmailAddressEmail("sysadmin@visionin...") (0.0s)&#xD;
-And I enter a password "p_sysadmin_password"&#xD;
--&gt; done: StepDefinitions.IEnterAPasswordPassword("p_sysadmin_password") (0.0s)&#xD;
-Then The Log in button should be enabled&#xD;
--&gt; done: StepDefinitions.TheLogInButtonShouldBeEnabled() (0.0s)&#xD;
-When I click the Log in button&#xD;
--&gt; done: StepDefinitions.IClickTheLogInButton() (0.0s)&#xD;
-Then I should see the Search Engines page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheSearchEnginesPage() (0.0s)&#xD;
-Then I log out of the system&#xD;
--&gt; done: StepDefinitions.ILogOutOfTheSystem() (0.0s)&#xD;
-Then I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="33509910-98ec-48fb-a4a3-3094d81c78a8" testId="8742c4ed-4ec6-a105-3d6c-28d6c8f3fe2e" testName="DeleteSearchEngineByButton_YesUid23F02B0C_5872_458F_8B76_246F1D639F62" computerName="BINH-PC2" duration="00:00:00.0071470" startTime="2019-02-11T12:06:23.5048643-08:00" endTime="2019-02-11T12:06:23.5121242-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33509910-98ec-48fb-a4a3-3094d81c78a8">
-      <Output>
-        <StdOut>Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
-And I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
-And I successfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.ISuccessfullyLoginAsASYSADMIN() (0.0s)&#xD;
-Then I add my search engine if it does not already exist&#xD;
--&gt; done: StepDefinitions.IAddMySearchEngineIfItDoesNotAlreadyExist() (0.0s)&#xD;
-Then I search for my search engine by Name&#xD;
--&gt; done: StepDefinitions.ISearchForMySearchEngineByName() (0.0s)&#xD;
-And I should see my search engine in the list of search engines&#xD;
--&gt; done: StepDefinitions.IShouldSeeMySearchEngineInTheListOfSearchEngines() (0.0s)&#xD;
-And I should see the Delete Selected button on the search engines page disabled&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheDeleteSelectedButtonOnTheSearchEnginesPageDisabled() (0.0s)&#xD;
-And I select my search engine&#xD;
--&gt; done: StepDefinitions.ISelectMySearchEngine() (0.0s)&#xD;
-And I click the Delete Selected button on the search engine page&#xD;
--&gt; done: StepDefinitions.IClickTheDeleteSelectedButtonOnTheSearchEnginePage() (0.0s)&#xD;
-Then I should see the Delete Confirmation modal&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheDeleteConfirmationModal() (0.0s)&#xD;
-And I click Yes on the Delete Confirmation modal&#xD;
--&gt; done: StepDefinitions.IClickYesOnTheDeleteConfirmationModal() (0.0s)&#xD;
-And I should see Delete toaster confirmation&#xD;
--&gt; done: StepDefinitions.IShouldSeeDeleteToasterConfirmation() (0.0s)&#xD;
-And I should not see my search engine in the list of search engines&#xD;
--&gt; done: StepDefinitions.IShouldNotSeeMySearchEngineInTheListOfSearchEngines() (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="643272cb-39aa-431e-90d8-7b122fcd2091" testId="7e14bd5b-2784-f9ee-3463-44ed55d8f43b" testName="SuccessfulLoginBySysAdminAccountUidA7003Aeb_1A31_416A_Bbc5_165Fd5E82Eff" computerName="BINH-PC2" duration="00:00:00.0019625" startTime="2019-02-11T12:06:23.3926126-08:00" endTime="2019-02-11T12:06:23.3946491-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="643272cb-39aa-431e-90d8-7b122fcd2091">
-      <Output>
-        <StdOut>Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
-Then I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
-Given I login by using SysAdmin account&#xD;
--&gt; done: StepDefinitions.ILoginByUsingSysAdminAccount() (0.0s)&#xD;
-Then I should see the backend page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheBackendPage() (0.0s)&#xD;
-And I should see the user full name is "System, Admin"&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheUserFullNameIsFullname("System, Admin") (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="b90a5557-acff-41a3-bacc-e4a08ffda820" testId="b1ea9a1d-08ae-a79f-f6ec-c08aafcf28a1" testName="CreateSearchEngineSearchAndVerifyDataOnMainSearchEnginePageUid88Ebcfef_173F_48F4_A699_416458491A63" computerName="BINH-PC2" duration="00:00:00.0139952" startTime="2019-02-11T12:06:23.4821177-08:00" endTime="2019-02-11T12:06:23.4966605-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b90a5557-acff-41a3-bacc-e4a08ffda820">
-      <Output>
-        <StdOut>Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
-And I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
-And I successfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.ISuccessfullyLoginAsASYSADMIN() (0.0s)&#xD;
-And I count the number of search engines on the page&#xD;
--&gt; done: StepDefinitions.ICountTheNumberOfSearchEnginesOnThePage() (0.0s)&#xD;
-And I should see Display 1-count of total on the page&#xD;
--&gt; done: StepDefinitions.IShouldSeeDisplay1countOfTotalOnThePage() (0.0s)&#xD;
-When I click the Add Search Engine button&#xD;
--&gt; done: StepDefinitions.IClickTheAddSearchEngineButton() (0.0s)&#xD;
-Then I should see the Add Search Engine details screen&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheAddSearchEngineDetailsScreen() (0.0s)&#xD;
-And I enter a random automated search engine name&#xD;
--&gt; done: StepDefinitions.IEnterARandomAutomatedSearchEngineName() (0.0s)&#xD;
-And I verify that the Key Prefix is set to STANDARD_KEY&#xD;
--&gt; done: StepDefinitions.IVerifyThatTheKeyPrefixIsSetToSTANDARDKEY() (0.0s)&#xD;
-And I enter a description of "Automated created search engine"&#xD;
--&gt; done: StepDefinitions.IEnterADescriptionOfMyDescription("Automated created...") (0.0s)&#xD;
-And I click the Save button on the search engine details page&#xD;
--&gt; done: StepDefinitions.IClickTheSaveButtonOnTheSearchEngineDetailsPage() (0.0s)&#xD;
-Then I should see the Add Successful toaster confirmation&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheAddSuccessfulToasterConfirmation() (0.0s)&#xD;
-Then I should see the Search Engines page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheSearchEnginesPage() (0.0s)&#xD;
-When I search for my search engine by Name&#xD;
--&gt; done: StepDefinitions.ISearchForMySearchEngineByName() (0.0s)&#xD;
-Then I should see my search engine in the list of search engines&#xD;
--&gt; done: StepDefinitions.IShouldSeeMySearchEngineInTheListOfSearchEngines() (0.0s)&#xD;
-And The Name field should be set to my search engine name&#xD;
--&gt; done: StepDefinitions.TheNameFieldShouldBeSetToMySearchEngineName() (0.0s)&#xD;
-And The Documents field should be set to "0"&#xD;
--&gt; done: StepDefinitions.TheDocumentsFieldShouldBeSetToDocCount("0") (0.0s)&#xD;
-And The Key field has my search engine key&#xD;
--&gt; done: StepDefinitions.TheKeyFieldHasMySearchEngineKey() (0.0s)&#xD;
-And I should see a Last Updated timestamp of current time&#xD;
--&gt; done: StepDefinitions.IShouldSeeALastUpdatedTimestampOfCurrentTime() (0.0s)&#xD;
-And I should see a By field populated with SYSADMIN&#xD;
--&gt; done: StepDefinitions.IShouldSeeAByFieldPopulatedWithSYSADMIN() (0.0s)&#xD;
-And I should see the Edit icon for the search engine&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheEditIconForTheSearchEngine() (0.0s)&#xD;
-And I should see the Trash Can icon for the search engine&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheTrashCanIconForTheSearchEngine() (0.0s)&#xD;
-And I should see the search result of "Displaying 1 - 1 of 1"&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheSearchResultOfP1("Displaying 1 - 1 ...") (0.0s)&#xD;
-And I clear the search engine box&#xD;
--&gt; done: StepDefinitions.IClearTheSearchEngineBox() (0.0s)&#xD;
-And I should see Display 1-count of total on the page&#xD;
--&gt; done: StepDefinitions.IShouldSeeDisplay1countOfTotalOnThePage() (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="38157ffe-f78f-42ca-90ea-ec8d54e20716" testId="344ec934-6441-13a9-0020-5fb47e92f9c2" testName="NavigationAroundTheVSMCByMenuAndBrowserUidF2C9110D_5D63_4Bc5_8942_5A9A303Af079" computerName="BINH-PC2" duration="00:00:00.0064523" startTime="2019-02-11T12:06:23.3946601-08:00" endTime="2019-02-11T12:06:23.4021255-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="38157ffe-f78f-42ca-90ea-ec8d54e20716">
-      <Output>
-        <StdOut>Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
-Then I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
-And I successfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.ISuccessfullyLoginAsASYSADMIN() (0.0s)&#xD;
-And I should see the Search Engines page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheSearchEnginesPage() (0.0s)&#xD;
-And I click the BACK button on the browser&#xD;
--&gt; done: StepDefinitions.IClickTheBACKButtonOnTheBrowser() (0.0s)&#xD;
-And I should see the Search Engines page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheSearchEnginesPage() (0.0s)&#xD;
-And I refresh the page&#xD;
--&gt; done: StepDefinitions.IRefreshThePage() (0.0s)&#xD;
-And I should see the Search Engines page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheSearchEnginesPage() (0.0s)&#xD;
-And I click the Admin drop-down&#xD;
--&gt; done: StepDefinitions.IClickTheAdminDropdown() (0.0s)&#xD;
-And I select the Users entry in the Admin drop-down&#xD;
--&gt; done: StepDefinitions.ISelectTheUsersEntryInTheAdminDropdown() (0.0s)&#xD;
-And I should see the Users main page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheUsersMainPage() (0.0s)&#xD;
-And I click the BACK button on the browser&#xD;
--&gt; done: StepDefinitions.IClickTheBACKButtonOnTheBrowser() (0.0s)&#xD;
-And I should see the Search Engines page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheSearchEnginesPage() (0.0s)&#xD;
-And I click the FORWARD button on the browser&#xD;
--&gt; done: StepDefinitions.IClickTheFORWARDButtonOnTheBrowser() (0.0s)&#xD;
-And I should see the Users main page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheUsersMainPage() (0.0s)&#xD;
-And I refresh the page&#xD;
--&gt; done: StepDefinitions.IRefreshThePage() (0.0s)&#xD;
-And I should see the Users main page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheUsersMainPage() (0.0s)&#xD;
-And I click the Search drop-down&#xD;
--&gt; done: StepDefinitions.IClickTheSearchDropdown() (0.0s)&#xD;
-And I select the Search Engines entry in the Search drop-down&#xD;
--&gt; done: StepDefinitions.ISelectTheSearchEnginesEntryInTheSearchDropdown() (0.0s)&#xD;
-And I should see the Search Engines page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheSearchEnginesPage() (0.0s)&#xD;
-And I log out of the system&#xD;
--&gt; done: StepDefinitions.ILogOutOfTheSystem() (0.0s)&#xD;
-And I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
-And I click the BACK button on the browser&#xD;
--&gt; done: StepDefinitions.IClickTheBACKButtonOnTheBrowser() (0.0s)&#xD;
-And I should see the VSMC login page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="7b9e2ad2-f016-4f52-8af6-14660e383231" testId="17ebdbeb-772e-a27b-60c8-689d3c45b017" testName="RestrictionsOnEmailAndPasswordFieldsUidD40Bf40F_8C25_4225_9Fba_F173232B7E01" computerName="BINH-PC2" duration="00:00:00.0031332" startTime="2019-02-11T12:06:23.3893709-08:00" endTime="2019-02-11T12:06:23.3926021-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b9e2ad2-f016-4f52-8af6-14660e383231">
-      <Output>
-        <StdOut>Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (5.8s)&#xD;
 Then I should see the VSMC login page&#xD;
 -&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
 When I enter an email address of BAD_EMAIL&#xD;
@@ -349,195 +236,496 @@ And The Log in button should be disabled&#xD;
 -&gt; done: StepDefinitions.TheLogInButtonShouldBeDisabled() (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="4a6510d7-0a7b-4342-8ca0-671ac0216752" testId="75b909ed-8ea5-2f27-8f72-0d6fed12eb0d" testName="AddUserSearchAndVerifyDataOnMainUserScreenUidE7090D62_8114_4873_A4Ea_6Dc721A67083" computerName="BINH-PC2" duration="00:00:00.0111743" startTime="2019-02-11T12:06:23.4021383-08:00" endTime="2019-02-11T12:06:23.4137246-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a6510d7-0a7b-4342-8ca0-671ac0216752">
+    <UnitTestResult executionId="c9ce4948-9134-4083-8d9a-64e08f5c503f" testId="344ec934-6441-13a9-0020-5fb47e92f9c2" testName="NavigationAroundTheVSMCByMenuAndBrowserUidF2C9110D_5D63_4Bc5_8942_5A9A303Af079" computerName="BINH-PC2" duration="00:00:08.5669055" startTime="2019-02-11T14:36:05.9998182-08:00" endTime="2019-02-11T14:36:14.5686855-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9ce4948-9134-4083-8d9a-64e08f5c503f">
       <Output>
         <StdOut>Given I go to the VSMC site&#xD;
--&gt; done: StepDefinitions.IGoToTheVSMCSite() (0.0s)&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (6.4s)&#xD;
 Then I should see the VSMC login page&#xD;
 -&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
 And I successfully login as a SYSADMIN&#xD;
--&gt; done: StepDefinitions.ISuccessfullyLoginAsASYSADMIN() (0.0s)&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)&#xD;
+And I should see the Search Engines page&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click the BACK button on the browser&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the Search Engines page&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I refresh the page&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the Search Engines page&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I click the Admin drop-down&#xD;
--&gt; done: StepDefinitions.IClickTheAdminDropdown() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I select the Users entry in the Admin drop-down&#xD;
--&gt; done: StepDefinitions.ISelectTheUsersEntryInTheAdminDropdown() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I should see the Users main page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheUsersMainPage() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click the BACK button on the browser&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the Search Engines page&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click the FORWARD button on the browser&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the Users main page&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I refresh the page&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the Users main page&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click the Search drop-down&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I select the Search Engines entry in the Search drop-down&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the Search Engines page&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I log out of the system&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the VSMC login page&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click the BACK button on the browser&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the VSMC login page&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method MSTestProject.AutomatedScripts.NavigationFeature.NavigationAroundTheVSMCByMenuAndBrowserUidF2C9110D_5D63_4Bc5_8942_5A9A303Af079 threw exception: &#xD;
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)&#xD;
+   at Example.Actionwords.IShouldSeeTheSearchEnginesPage() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 189&#xD;
+   at Example.Actionwords.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 260&#xD;
+   at Example.StepDefinitions.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\StepDefinitions.cs:line 163&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 73&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 411&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 316&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep() in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 132&#xD;
+   at MSTestProject.AutomatedScripts.NavigationFeature.ScenarioCleanup()&#xD;
+   at MSTestProject.AutomatedScripts.NavigationFeature.NavigationAroundTheVSMCByMenuAndBrowserUidF2C9110D_5D63_4Bc5_8942_5A9A303Af079() in E:\Working Data\Github\AutomationTesting\MSTestProject\AutomatedScripts\Navigation.feature:line 31&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="45d057f8-7437-4a03-b1a5-6efa50c8cd94" testId="75b909ed-8ea5-2f27-8f72-0d6fed12eb0d" testName="AddUserSearchAndVerifyDataOnMainUserScreenUidE7090D62_8114_4873_A4Ea_6Dc721A67083" computerName="BINH-PC2" duration="00:00:07.9658426" startTime="2019-02-11T14:36:14.5690669-08:00" endTime="2019-02-11T14:36:22.5354519-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45d057f8-7437-4a03-b1a5-6efa50c8cd94">
+      <Output>
+        <StdOut>Given I go to the VSMC site&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (5.8s)&#xD;
+Then I should see the VSMC login page&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
+And I successfully login as a SYSADMIN&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)&#xD;
+And I click the Admin drop-down&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I select the Users entry in the Admin drop-down&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the Users main page&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I click the Add User button&#xD;
--&gt; done: StepDefinitions.IClickTheAddUserButton() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I enter my user's first name&#xD;
--&gt; done: StepDefinitions.IEnterMyUsersFirstName() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I enter my user's last name&#xD;
--&gt; done: StepDefinitions.IEnterMyUsersLastName() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I enter my user's email&#xD;
--&gt; done: StepDefinitions.IEnterMyUsersEmail() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I enter my user's password in the Password field&#xD;
--&gt; done: StepDefinitions.IEnterMyUsersPasswordInThePasswordField() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I enter my user's password in the Confirm Password field&#xD;
--&gt; done: StepDefinitions.IEnterMyUsersPasswordInTheConfirmPasswordField() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I should see the Active checkbox is already checked&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheActiveCheckboxIsAlreadyChecked() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I check the Super User checkbox&#xD;
--&gt; done: StepDefinitions.ICheckTheSuperUserCheckbox() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I click the Add button on the Add User details page&#xD;
--&gt; done: StepDefinitions.IClickTheAddButtonOnTheAddUserDetailsPage() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I should see the Users main page&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheUsersMainPage() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I search for my user by their email address&#xD;
--&gt; done: StepDefinitions.ISearchForMyUserByTheirEmailAddress() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I should see my user in the list of users&#xD;
--&gt; done: StepDefinitions.IShouldSeeMyUserInTheListOfUsers() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And The Full Name field should have my user lastname, firstname&#xD;
--&gt; done: StepDefinitions.TheFullNameFieldShouldHaveMyUserLastnameFirstname() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And The Email field should be my user's email&#xD;
--&gt; done: StepDefinitions.TheEmailFieldShouldBeMyUsersEmail() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And The Super User field should be set to Yes&#xD;
--&gt; done: StepDefinitions.TheSuperUserFieldShouldBeSetToYes() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And The Status field should be set to Active&#xD;
--&gt; done: StepDefinitions.TheStatusFieldShouldBeSetToActive() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I should see a Last Updated timestamp of current time&#xD;
--&gt; done: StepDefinitions.IShouldSeeALastUpdatedTimestampOfCurrentTime() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And The By field should be populated with SYSADMIN&#xD;
--&gt; done: StepDefinitions.TheByFieldShouldBePopulatedWithSYSADMIN() (0.0s)&#xD;
+-&gt; skipped because of previous errors&#xD;
 And I should see the edit icon for the user&#xD;
--&gt; done: StepDefinitions.IShouldSeeTheEditIconForTheUser() (0.0s)</StdOut>
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method MSTestProject.AutomatedScripts.UsersFeature.AddUserSearchAndVerifyDataOnMainUserScreenUidE7090D62_8114_4873_A4Ea_6Dc721A67083 threw exception: &#xD;
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)&#xD;
+   at Example.Actionwords.IShouldSeeTheSearchEnginesPage() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 189&#xD;
+   at Example.Actionwords.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 260&#xD;
+   at Example.StepDefinitions.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\StepDefinitions.cs:line 163&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 73&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 411&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 316&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep() in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 132&#xD;
+   at MSTestProject.AutomatedScripts.UsersFeature.ScenarioCleanup()&#xD;
+   at MSTestProject.AutomatedScripts.UsersFeature.AddUserSearchAndVerifyDataOnMainUserScreenUidE7090D62_8114_4873_A4Ea_6Dc721A67083() in E:\Working Data\Github\AutomationTesting\MSTestProject\AutomatedScripts\Users.feature:line 33&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bb8a2374-06dc-480a-abcc-f2c63fbf0b21" testId="72350010-2df6-ebf9-eb8a-96c0795080d8" testName="RequiredFieldsForLoginUid68Fbf401_D6Eb_44F8_9Dcd_6F3D4972E868" computerName="BINH-PC2" duration="00:00:06.1306333" startTime="2019-02-11T14:35:29.3196399-08:00" endTime="2019-02-11T14:35:35.4504377-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bb8a2374-06dc-480a-abcc-f2c63fbf0b21">
+      <Output>
+        <StdOut>Given I go to the VSMC site&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (6.1s)&#xD;
+Then I should see the VSMC login page&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
+When I press tab on the email address field&#xD;
+-&gt; done: StepDefinitions.IPressTabOnTheEmailAddressField() (0.0s)&#xD;
+Then I should see the Email is required message&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheEmailIsRequiredMessage() (0.0s)&#xD;
+And I should see the Password is required message&#xD;
+-&gt; done: StepDefinitions.IShouldSeeThePasswordIsRequiredMessage() (0.0s)&#xD;
+And The Log in button should be disabled&#xD;
+-&gt; done: StepDefinitions.TheLogInButtonShouldBeDisabled() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="41c48bd8-19d3-4c2e-b910-1a79d406a8c9" testId="677d75db-a29d-d14a-97ef-add3d0e26b2d" testName="DeleteSearchEngineByIcon_YesUid3F4237D8_6Cd2_4932_84Db_58746E91D5F0" computerName="BINH-PC2" duration="00:00:08.2787326" startTime="2019-02-11T14:36:30.5200290-08:00" endTime="2019-02-11T14:36:38.7993161-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41c48bd8-19d3-4c2e-b910-1a79d406a8c9">
+      <Output>
+        <StdOut>Given I go to the VSMC site&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (6.1s)&#xD;
+And I should see the VSMC login page&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
+And I successfully login as a SYSADMIN&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)&#xD;
+Then I add my search engine if it does not already exist&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I search for my search engine by Name&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see my search engine in the list of search engines&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I click the trash can associated with my search engine&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see the Delete Confirmation modal&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click Yes on the Delete Confirmation modal&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see Delete toaster confirmation&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should not see my search engine in the list of search engines&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature.DeleteSearchEngineByIcon_YesUid3F4237D8_6Cd2_4932_84Db_58746E91D5F0 threw exception: &#xD;
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)&#xD;
+   at Example.Actionwords.IShouldSeeTheSearchEnginesPage() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 189&#xD;
+   at Example.Actionwords.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 260&#xD;
+   at Example.StepDefinitions.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\StepDefinitions.cs:line 163&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 73&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 411&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 316&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep() in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 132&#xD;
+   at MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature.ScenarioCleanup()&#xD;
+   at MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature.DeleteSearchEngineByIcon_YesUid3F4237D8_6Cd2_4932_84Db_58746E91D5F0() in E:\Working Data\Github\AutomationTesting\MSTestProject\AutomatedScripts\SearchEngines\DeleteSearchEngines.feature:line 18&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5659d1a7-43e9-497f-b1ef-fe4d38ff355f" testId="f654ffb2-e94a-fbea-e420-691c9809b428" testName="UnsuccessfulSystemAdministratorLoginUidF0D8Da9D_7069_4218_Ac00_Ff5Dd72A6Eaf" computerName="BINH-PC2" duration="00:00:08.9165291" startTime="2019-02-11T14:35:10.2718178-08:00" endTime="2019-02-11T14:35:19.1887496-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5659d1a7-43e9-497f-b1ef-fe4d38ff355f">
+      <Output>
+        <StdOut>Given I go to the VSMC site&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (6.8s)&#xD;
+Then I should see the VSMC login page&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
+And I unsuccessfully login as a SYSADMIN&#xD;
+-&gt; done: StepDefinitions.IUnsuccessfullyLoginAsASYSADMIN() (2.1s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6faa33fc-b6be-413b-b732-2ecdd171336a" testId="7e14bd5b-2784-f9ee-3463-44ed55d8f43b" testName="SuccessfulLoginBySysAdminAccountUidA7003Aeb_1A31_416A_Bbc5_165Fd5E82Eff" computerName="BINH-PC2" duration="00:00:06.3526519" startTime="2019-02-11T14:35:59.6464492-08:00" endTime="2019-02-11T14:36:05.9993047-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6faa33fc-b6be-413b-b732-2ecdd171336a">
+      <Output>
+        <StdOut>Given I go to the VSMC site&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (6.3s)&#xD;
+Then I should see the VSMC login page&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
+Given I login by using SysAdmin account&#xD;
+-&gt; done: StepDefinitions.ILoginByUsingSysAdminAccount() (0.0s)&#xD;
+Then I should see the backend page&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheBackendPage() (0.0s)&#xD;
+And I should see the user full name is "System, Admin"&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheUserFullNameIsFullname("System, Admin") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="495dcc25-4f8e-40a3-9194-7e50ac5409cd" testId="fbbc58ec-b202-1088-03b7-c59a3ff1f523" testName="DeleteSearchEngineByIcon_NoUidBeb6F288_E3Af_4B6E_Aa8C_2Fa5Ab53D2De" computerName="BINH-PC2" duration="00:00:09.2685144" startTime="2019-02-11T14:36:38.7996968-08:00" endTime="2019-02-11T14:36:48.0684449-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="495dcc25-4f8e-40a3-9194-7e50ac5409cd">
+      <Output>
+        <StdOut>Given I go to the VSMC site&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (7.1s)&#xD;
+And I should see the VSMC login page&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
+And I successfully login as a SYSADMIN&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)&#xD;
+And I add my search engine if it does not already exist&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I search for my search engine by Name&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see my search engine in the list of search engines&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I click the trash can associated with my search engine&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see the Delete Confirmation modal&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click No on the Delete Confirmation modal&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see my search engine&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature.DeleteSearchEngineByIcon_NoUidBeb6F288_E3Af_4B6E_Aa8C_2Fa5Ab53D2De threw exception: &#xD;
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)&#xD;
+   at Example.Actionwords.IShouldSeeTheSearchEnginesPage() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 189&#xD;
+   at Example.Actionwords.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 260&#xD;
+   at Example.StepDefinitions.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\StepDefinitions.cs:line 163&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 73&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 411&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 316&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep() in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 132&#xD;
+   at MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature.ScenarioCleanup()&#xD;
+   at MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature.DeleteSearchEngineByIcon_NoUidBeb6F288_E3Af_4B6E_Aa8C_2Fa5Ab53D2De() in E:\Working Data\Github\AutomationTesting\MSTestProject\AutomatedScripts\SearchEngines\DeleteSearchEngines.feature:line 28&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8b736a19-4cb6-4ee1-a548-fad9ab160cfc" testId="0dd040cd-5e68-b9a8-518d-890d1822a740" testName="SuccessfulDefaultLoginAndLogoutUid5B840636_7944_4Afa_8175_91D2B049F56D" computerName="BINH-PC2" duration="00:00:11.6461853" startTime="2019-02-11T14:34:58.2729148-08:00" endTime="2019-02-11T14:35:10.2381481-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8b736a19-4cb6-4ee1-a548-fad9ab160cfc">
+      <Output>
+        <StdOut>-&gt; Loading plugin E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll&#xD;
+-&gt; Using default config&#xD;
+Given I go to the VSMC site&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (7.0s)&#xD;
+Then I should see the VSMC login page&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
+When I enter an email address "sysadmin@visioninternet.com"&#xD;
+-&gt; done: StepDefinitions.IEnterAnEmailAddressEmail("sysadmin@visionin...") (0.2s)&#xD;
+And I enter a password "p_sysadmin_password"&#xD;
+-&gt; done: StepDefinitions.IEnterAPasswordPassword("p_sysadmin_password") (0.1s)&#xD;
+Then The Log in button should be enabled&#xD;
+-&gt; done: StepDefinitions.TheLogInButtonShouldBeEnabled() (0.0s)&#xD;
+When I click the Log in button&#xD;
+-&gt; done: StepDefinitions.IClickTheLogInButton() (2.1s)&#xD;
+Then I should see the Search Engines page&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheSearchEnginesPage() (0.0s)&#xD;
+Then I log out of the system&#xD;
+-&gt; done: StepDefinitions.ILogOutOfTheSystem() (2.1s)&#xD;
+Then I should see the VSMC login page&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a6d4fc0f-1c78-4457-832c-08e93416519d" testId="6f2b710c-1b82-1a08-8416-6d7f112115b2" testName="DeleteSearchEngineByButton_NoUidE6Ad8020_86C7_4A7D_8Cbd_157152E53599" computerName="BINH-PC2" duration="00:00:08.1980316" startTime="2019-02-11T14:36:56.2322468-08:00" endTime="2019-02-11T14:37:04.4304472-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6d4fc0f-1c78-4457-832c-08e93416519d">
+      <Output>
+        <StdOut>Given I go to the VSMC site&#xD;
+-&gt; done: StepDefinitions.IGoToTheVSMCSite() (6.0s)&#xD;
+And I should see the VSMC login page&#xD;
+-&gt; done: StepDefinitions.IShouldSeeTheVSMCLoginPage() (0.0s)&#xD;
+And I successfully login as a SYSADMIN&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)&#xD;
+Then I add my search engine if it does not already exist&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I search for my search engine by Name&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see my search engine in the list of search engines&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see the Delete Selected button on the search engines page disabled&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I select my search engine&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click the Delete Selected button on the search engine page&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see the Delete Confirmation modal&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click No on the Delete Confirmation modal&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should not see the Delete toaster confirmation&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I should see my search engine in the list of search engines&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature.DeleteSearchEngineByButton_NoUidE6Ad8020_86C7_4A7D_8Cbd_157152E53599 threw exception: &#xD;
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".navbar-collapse"}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)&#xD;
+   at Example.Actionwords.IShouldSeeTheSearchEnginesPage() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 189&#xD;
+   at Example.Actionwords.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\Actionwords.cs:line 260&#xD;
+   at Example.StepDefinitions.ISuccessfullyLoginAsASYSADMIN() in E:\Working Data\Github\AutomationTesting\MSTestProject\StepDefinitions.cs:line 163&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 73&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 411&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 316&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep() in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 132&#xD;
+   at MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature.ScenarioCleanup()&#xD;
+   at MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature.DeleteSearchEngineByButton_NoUidE6Ad8020_86C7_4A7D_8Cbd_157152E53599() in E:\Working Data\Github\AutomationTesting\MSTestProject\AutomatedScripts\SearchEngines\DeleteSearchEngines.feature:line 54&#xD;
+</StackTrace>
+        </ErrorInfo>
       </Output>
     </UnitTestResult>
   </Results>
   <TestDefinitions>
-    <UnitTest name="DeleteSearchEngineByButton_NoUidE6Ad8020_86C7_4A7D_8Cbd_157152E53599" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="6f2b710c-1b82-1a08-8416-6d7f112115b2">
+    <UnitTest name="DeleteSearchEngineByButton_NoUidE6Ad8020_86C7_4A7D_8Cbd_157152E53599" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="6f2b710c-1b82-1a08-8416-6d7f112115b2">
       <TestCategory>
-        <TestCategoryItem TestCategory="SEARCH_ENGINE" />
         <TestCategoryItem TestCategory="AUTO_READY" />
-      </TestCategory>
-      <Execution id="9ecc675a-043b-407b-9919-e2d4c9c445dd" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature" name="DeleteSearchEngineByButton_NoUidE6Ad8020_86C7_4A7D_8Cbd_157152E53599" />
-    </UnitTest>
-    <UnitTest name="DeleteSearchEngineByIcon_NoUidBeb6F288_E3Af_4B6E_Aa8C_2Fa5Ab53D2De" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="fbbc58ec-b202-1088-03b7-c59a3ff1f523">
-      <TestCategory>
         <TestCategoryItem TestCategory="SEARCH_ENGINE" />
-        <TestCategoryItem TestCategory="AUTO_READY" />
       </TestCategory>
-      <Execution id="7a6eb933-6727-4a51-ae18-9e477a238b98" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature" name="DeleteSearchEngineByIcon_NoUidBeb6F288_E3Af_4B6E_Aa8C_2Fa5Ab53D2De" />
+      <Execution id="a6d4fc0f-1c78-4457-832c-08e93416519d" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature" name="DeleteSearchEngineByButton_NoUidE6Ad8020_86C7_4A7D_8Cbd_157152E53599" />
     </UnitTest>
-    <UnitTest name="NavigationAroundTheVSMCByMenuAndBrowserUidF2C9110D_5D63_4Bc5_8942_5A9A303Af079" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="344ec934-6441-13a9-0020-5fb47e92f9c2">
+    <UnitTest name="DeleteSearchEngineByIcon_NoUidBeb6F288_E3Af_4B6E_Aa8C_2Fa5Ab53D2De" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="fbbc58ec-b202-1088-03b7-c59a3ff1f523">
       <TestCategory>
+        <TestCategoryItem TestCategory="AUTO_READY" />
+        <TestCategoryItem TestCategory="SEARCH_ENGINE" />
+      </TestCategory>
+      <Execution id="495dcc25-4f8e-40a3-9194-7e50ac5409cd" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature" name="DeleteSearchEngineByIcon_NoUidBeb6F288_E3Af_4B6E_Aa8C_2Fa5Ab53D2De" />
+    </UnitTest>
+    <UnitTest name="NavigationAroundTheVSMCByMenuAndBrowserUidF2C9110D_5D63_4Bc5_8942_5A9A303Af079" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="344ec934-6441-13a9-0020-5fb47e92f9c2">
+      <TestCategory>
+        <TestCategoryItem TestCategory="AUTO_READY" />
         <TestCategoryItem TestCategory="NAVIGATION" />
-        <TestCategoryItem TestCategory="AUTO_READY" />
       </TestCategory>
-      <Execution id="38157ffe-f78f-42ca-90ea-ec8d54e20716" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.NavigationFeature" name="NavigationAroundTheVSMCByMenuAndBrowserUidF2C9110D_5D63_4Bc5_8942_5A9A303Af079" />
+      <Execution id="c9ce4948-9134-4083-8d9a-64e08f5c503f" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.NavigationFeature" name="NavigationAroundTheVSMCByMenuAndBrowserUidF2C9110D_5D63_4Bc5_8942_5A9A303Af079" />
     </UnitTest>
-    <UnitTest name="RequiredFieldsForLoginUid68Fbf401_D6Eb_44F8_9Dcd_6F3D4972E868" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="72350010-2df6-ebf9-eb8a-96c0795080d8">
+    <UnitTest name="RequiredFieldsForLoginUid68Fbf401_D6Eb_44F8_9Dcd_6F3D4972E868" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="72350010-2df6-ebf9-eb8a-96c0795080d8">
       <TestCategory>
         <TestCategoryItem TestCategory="LOGIN" />
         <TestCategoryItem TestCategory="AUTO_READY" />
       </TestCategory>
-      <Execution id="abdab74e-edb1-4eb2-adba-6d0783ec26fa" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="RequiredFieldsForLoginUid68Fbf401_D6Eb_44F8_9Dcd_6F3D4972E868" />
+      <Execution id="bb8a2374-06dc-480a-abcc-f2c63fbf0b21" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="RequiredFieldsForLoginUid68Fbf401_D6Eb_44F8_9Dcd_6F3D4972E868" />
     </UnitTest>
-    <UnitTest name="RestrictionsOnEmailAndPasswordFieldsUidD40Bf40F_8C25_4225_9Fba_F173232B7E01" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="17ebdbeb-772e-a27b-60c8-689d3c45b017">
+    <UnitTest name="RestrictionsOnEmailAndPasswordFieldsUidD40Bf40F_8C25_4225_9Fba_F173232B7E01" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="17ebdbeb-772e-a27b-60c8-689d3c45b017">
       <TestCategory>
         <TestCategoryItem TestCategory="LOGIN" />
         <TestCategoryItem TestCategory="AUTO_READY" />
       </TestCategory>
-      <Execution id="7b9e2ad2-f016-4f52-8af6-14660e383231" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="RestrictionsOnEmailAndPasswordFieldsUidD40Bf40F_8C25_4225_9Fba_F173232B7E01" />
+      <Execution id="18555e15-4dd6-433b-92df-92abbb072e83" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="RestrictionsOnEmailAndPasswordFieldsUidD40Bf40F_8C25_4225_9Fba_F173232B7E01" />
     </UnitTest>
-    <UnitTest name="LoginAttemptsAreNotRestrictedUid78590E2A_A8E8_4Cfd_9564_4112Fc501F09" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="3ba04ced-0eb4-2531-570e-78262f9e8d0f">
+    <UnitTest name="LoginAttemptsAreNotRestrictedUid78590E2A_A8E8_4Cfd_9564_4112Fc501F09" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="3ba04ced-0eb4-2531-570e-78262f9e8d0f">
       <TestCategory>
         <TestCategoryItem TestCategory="LOGIN" />
         <TestCategoryItem TestCategory="AUTO_READY" />
       </TestCategory>
-      <Execution id="c78fcf39-3a1c-4c67-a1bd-3a86ca3a7f30" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="LoginAttemptsAreNotRestrictedUid78590E2A_A8E8_4Cfd_9564_4112Fc501F09" />
+      <Execution id="1d1f12b3-0165-4797-95c3-c8bbc191e548" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="LoginAttemptsAreNotRestrictedUid78590E2A_A8E8_4Cfd_9564_4112Fc501F09" />
     </UnitTest>
-    <UnitTest name="UnsuccessfulSystemAdministratorLoginUidF0D8Da9D_7069_4218_Ac00_Ff5Dd72A6Eaf" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="f654ffb2-e94a-fbea-e420-691c9809b428">
+    <UnitTest name="UnsuccessfulSystemAdministratorLoginUidF0D8Da9D_7069_4218_Ac00_Ff5Dd72A6Eaf" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="f654ffb2-e94a-fbea-e420-691c9809b428">
       <TestCategory>
         <TestCategoryItem TestCategory="LOGIN" />
         <TestCategoryItem TestCategory="AUTO_READY" />
       </TestCategory>
-      <Execution id="5d799c10-99c5-49f2-9eb8-6c3b848939b1" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="UnsuccessfulSystemAdministratorLoginUidF0D8Da9D_7069_4218_Ac00_Ff5Dd72A6Eaf" />
+      <Execution id="5659d1a7-43e9-497f-b1ef-fe4d38ff355f" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="UnsuccessfulSystemAdministratorLoginUidF0D8Da9D_7069_4218_Ac00_Ff5Dd72A6Eaf" />
     </UnitTest>
-    <UnitTest name="SuccessfulUserLoginAndLogoutUidA682A789_3Be2_4B6A_A051_E5Ba383E49Fa" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="aeb97e1f-40b0-e7cc-1bdc-79ef7cb111e6">
+    <UnitTest name="SuccessfulUserLoginAndLogoutUidA682A789_3Be2_4B6A_A051_E5Ba383E49Fa" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="aeb97e1f-40b0-e7cc-1bdc-79ef7cb111e6">
       <TestCategory>
         <TestCategoryItem TestCategory="LOGIN" />
         <TestCategoryItem TestCategory="AUTO_READY" />
       </TestCategory>
-      <Execution id="68f9565d-af11-45e3-a0f5-409606aef60f" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="SuccessfulUserLoginAndLogoutUidA682A789_3Be2_4B6A_A051_E5Ba383E49Fa" />
+      <Execution id="369b2f11-3b08-4e36-9095-d52cf4c2eed1" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="SuccessfulUserLoginAndLogoutUidA682A789_3Be2_4B6A_A051_E5Ba383E49Fa" />
     </UnitTest>
-    <UnitTest name="DeleteSearchEngineByButton_YesUid23F02B0C_5872_458F_8B76_246F1D639F62" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="8742c4ed-4ec6-a105-3d6c-28d6c8f3fe2e">
+    <UnitTest name="DeleteSearchEngineByButton_YesUid23F02B0C_5872_458F_8B76_246F1D639F62" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="8742c4ed-4ec6-a105-3d6c-28d6c8f3fe2e">
       <TestCategory>
+        <TestCategoryItem TestCategory="AUTO_READY" />
         <TestCategoryItem TestCategory="SEARCH_ENGINE" />
-        <TestCategoryItem TestCategory="AUTO_READY" />
       </TestCategory>
-      <Execution id="33509910-98ec-48fb-a4a3-3094d81c78a8" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature" name="DeleteSearchEngineByButton_YesUid23F02B0C_5872_458F_8B76_246F1D639F62" />
+      <Execution id="0f39bd4a-1e3e-4239-a935-3a44cc7f4c6d" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature" name="DeleteSearchEngineByButton_YesUid23F02B0C_5872_458F_8B76_246F1D639F62" />
     </UnitTest>
-    <UnitTest name="AddUserSearchAndVerifyDataOnMainUserScreenUidE7090D62_8114_4873_A4Ea_6Dc721A67083" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="75b909ed-8ea5-2f27-8f72-0d6fed12eb0d">
+    <UnitTest name="AddUserSearchAndVerifyDataOnMainUserScreenUidE7090D62_8114_4873_A4Ea_6Dc721A67083" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="75b909ed-8ea5-2f27-8f72-0d6fed12eb0d">
       <TestCategory>
         <TestCategoryItem TestCategory="USERS" />
         <TestCategoryItem TestCategory="AUTO_READY" />
       </TestCategory>
-      <Execution id="4a6510d7-0a7b-4342-8ca0-671ac0216752" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.UsersFeature" name="AddUserSearchAndVerifyDataOnMainUserScreenUidE7090D62_8114_4873_A4Ea_6Dc721A67083" />
+      <Execution id="45d057f8-7437-4a03-b1a5-6efa50c8cd94" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.UsersFeature" name="AddUserSearchAndVerifyDataOnMainUserScreenUidE7090D62_8114_4873_A4Ea_6Dc721A67083" />
     </UnitTest>
-    <UnitTest name="SuccessfulLoginBySysAdminAccountUidA7003Aeb_1A31_416A_Bbc5_165Fd5E82Eff" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="7e14bd5b-2784-f9ee-3463-44ed55d8f43b">
+    <UnitTest name="SuccessfulLoginBySysAdminAccountUidA7003Aeb_1A31_416A_Bbc5_165Fd5E82Eff" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="7e14bd5b-2784-f9ee-3463-44ed55d8f43b">
       <TestCategory>
         <TestCategoryItem TestCategory="LOGIN" />
       </TestCategory>
-      <Execution id="643272cb-39aa-431e-90d8-7b122fcd2091" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="SuccessfulLoginBySysAdminAccountUidA7003Aeb_1A31_416A_Bbc5_165Fd5E82Eff" />
+      <Execution id="6faa33fc-b6be-413b-b732-2ecdd171336a" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="SuccessfulLoginBySysAdminAccountUidA7003Aeb_1A31_416A_Bbc5_165Fd5E82Eff" />
     </UnitTest>
-    <UnitTest name="SuccessfulDefaultLoginAndLogoutUid5B840636_7944_4Afa_8175_91D2B049F56D" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="0dd040cd-5e68-b9a8-518d-890d1822a740">
+    <UnitTest name="SuccessfulDefaultLoginAndLogoutUid5B840636_7944_4Afa_8175_91D2B049F56D" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="0dd040cd-5e68-b9a8-518d-890d1822a740">
       <TestCategory>
         <TestCategoryItem TestCategory="LOGIN" />
         <TestCategoryItem TestCategory="AUTO_READY" />
       </TestCategory>
-      <Execution id="c1c8b78e-a95c-428b-bed4-20b3b370899e" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="SuccessfulDefaultLoginAndLogoutUid5B840636_7944_4Afa_8175_91D2B049F56D" />
+      <Execution id="8b736a19-4cb6-4ee1-a548-fad9ab160cfc" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.LoginFeature" name="SuccessfulDefaultLoginAndLogoutUid5B840636_7944_4Afa_8175_91D2B049F56D" />
     </UnitTest>
-    <UnitTest name="CreateSearchEngineSearchAndVerifyDataOnMainSearchEnginePageUid88Ebcfef_173F_48F4_A699_416458491A63" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="b1ea9a1d-08ae-a79f-f6ec-c08aafcf28a1">
+    <UnitTest name="CreateSearchEngineSearchAndVerifyDataOnMainSearchEnginePageUid88Ebcfef_173F_48F4_A699_416458491A63" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="b1ea9a1d-08ae-a79f-f6ec-c08aafcf28a1">
       <TestCategory>
         <TestCategoryItem TestCategory="SEARCH_ENGINE" />
         <TestCategoryItem TestCategory="AUTO_READY" />
       </TestCategory>
-      <Execution id="b90a5557-acff-41a3-bacc-e4a08ffda820" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.SearchEngines.AddSearchEngineFeature" name="CreateSearchEngineSearchAndVerifyDataOnMainSearchEnginePageUid88Ebcfef_173F_48F4_A699_416458491A63" />
+      <Execution id="152b1ed6-e373-4dfd-9444-ca2a8f279468" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.SearchEngines.AddSearchEngineFeature" name="CreateSearchEngineSearchAndVerifyDataOnMainSearchEnginePageUid88Ebcfef_173F_48F4_A699_416458491A63" />
     </UnitTest>
-    <UnitTest name="DeleteSearchEngineByIcon_YesUid3F4237D8_6Cd2_4932_84Db_58746E91D5F0" storage="e:\working data\examples\automation testing\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="677d75db-a29d-d14a-97ef-add3d0e26b2d">
+    <UnitTest name="DeleteSearchEngineByIcon_YesUid3F4237D8_6Cd2_4932_84Db_58746E91D5F0" storage="e:\working data\github\automationtesting\mstestproject\bin\debug\netcoreapp2.0\mstestproject.dll" id="677d75db-a29d-d14a-97ef-add3d0e26b2d">
       <TestCategory>
-        <TestCategoryItem TestCategory="SEARCH_ENGINE" />
         <TestCategoryItem TestCategory="AUTO_READY" />
+        <TestCategoryItem TestCategory="SEARCH_ENGINE" />
       </TestCategory>
-      <Execution id="04124c87-5f6c-47af-bfa0-772559ba2d79" />
-      <TestMethod codeBase="E:\Working Data\Examples\Automation Testing\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature" name="DeleteSearchEngineByIcon_YesUid3F4237D8_6Cd2_4932_84Db_58746E91D5F0" />
+      <Execution id="41c48bd8-19d3-4c2e-b910-1a79d406a8c9" />
+      <TestMethod codeBase="E:\Working Data\Github\AutomationTesting\MSTestProject\bin\Debug\netcoreapp2.0\MSTestProject.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestProject.AutomatedScripts.SearchEngines.DeleteSearchEnginesFeature" name="DeleteSearchEngineByIcon_YesUid3F4237D8_6Cd2_4932_84Db_58746E91D5F0" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="aeb97e1f-40b0-e7cc-1bdc-79ef7cb111e6" executionId="68f9565d-af11-45e3-a0f5-409606aef60f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="f654ffb2-e94a-fbea-e420-691c9809b428" executionId="5d799c10-99c5-49f2-9eb8-6c3b848939b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="72350010-2df6-ebf9-eb8a-96c0795080d8" executionId="abdab74e-edb1-4eb2-adba-6d0783ec26fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="6f2b710c-1b82-1a08-8416-6d7f112115b2" executionId="9ecc675a-043b-407b-9919-e2d4c9c445dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="fbbc58ec-b202-1088-03b7-c59a3ff1f523" executionId="7a6eb933-6727-4a51-ae18-9e477a238b98" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="3ba04ced-0eb4-2531-570e-78262f9e8d0f" executionId="c78fcf39-3a1c-4c67-a1bd-3a86ca3a7f30" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="677d75db-a29d-d14a-97ef-add3d0e26b2d" executionId="04124c87-5f6c-47af-bfa0-772559ba2d79" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="0dd040cd-5e68-b9a8-518d-890d1822a740" executionId="c1c8b78e-a95c-428b-bed4-20b3b370899e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="8742c4ed-4ec6-a105-3d6c-28d6c8f3fe2e" executionId="33509910-98ec-48fb-a4a3-3094d81c78a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="7e14bd5b-2784-f9ee-3463-44ed55d8f43b" executionId="643272cb-39aa-431e-90d8-7b122fcd2091" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="b1ea9a1d-08ae-a79f-f6ec-c08aafcf28a1" executionId="b90a5557-acff-41a3-bacc-e4a08ffda820" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="344ec934-6441-13a9-0020-5fb47e92f9c2" executionId="38157ffe-f78f-42ca-90ea-ec8d54e20716" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="17ebdbeb-772e-a27b-60c8-689d3c45b017" executionId="7b9e2ad2-f016-4f52-8af6-14660e383231" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="75b909ed-8ea5-2f27-8f72-0d6fed12eb0d" executionId="4a6510d7-0a7b-4342-8ca0-671ac0216752" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8742c4ed-4ec6-a105-3d6c-28d6c8f3fe2e" executionId="0f39bd4a-1e3e-4239-a935-3a44cc7f4c6d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b1ea9a1d-08ae-a79f-f6ec-c08aafcf28a1" executionId="152b1ed6-e373-4dfd-9444-ca2a8f279468" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aeb97e1f-40b0-e7cc-1bdc-79ef7cb111e6" executionId="369b2f11-3b08-4e36-9095-d52cf4c2eed1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3ba04ced-0eb4-2531-570e-78262f9e8d0f" executionId="1d1f12b3-0165-4797-95c3-c8bbc191e548" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17ebdbeb-772e-a27b-60c8-689d3c45b017" executionId="18555e15-4dd6-433b-92df-92abbb072e83" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="344ec934-6441-13a9-0020-5fb47e92f9c2" executionId="c9ce4948-9134-4083-8d9a-64e08f5c503f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="75b909ed-8ea5-2f27-8f72-0d6fed12eb0d" executionId="45d057f8-7437-4a03-b1a5-6efa50c8cd94" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72350010-2df6-ebf9-eb8a-96c0795080d8" executionId="bb8a2374-06dc-480a-abcc-f2c63fbf0b21" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="677d75db-a29d-d14a-97ef-add3d0e26b2d" executionId="41c48bd8-19d3-4c2e-b910-1a79d406a8c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f654ffb2-e94a-fbea-e420-691c9809b428" executionId="5659d1a7-43e9-497f-b1ef-fe4d38ff355f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7e14bd5b-2784-f9ee-3463-44ed55d8f43b" executionId="6faa33fc-b6be-413b-b732-2ecdd171336a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fbbc58ec-b202-1088-03b7-c59a3ff1f523" executionId="495dcc25-4f8e-40a3-9194-7e50ac5409cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0dd040cd-5e68-b9a8-518d-890d1822a740" executionId="8b736a19-4cb6-4ee1-a548-fad9ab160cfc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f2b710c-1b82-1a08-8416-6d7f112115b2" executionId="a6d4fc0f-1c78-4457-832c-08e93416519d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
     <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
   </TestLists>
-  <ResultSummary outcome="Completed">
-    <Counters total="14" executed="14" passed="14" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  <ResultSummary outcome="Failed">
+    <Counters total="14" executed="14" passed="5" failed="9" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
   </ResultSummary>
 </TestRun>
